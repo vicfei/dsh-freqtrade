@@ -1,0 +1,7 @@
+name: macd_momentum
+description: MACD 动量（零轴上金叉思想，简化为快慢线差分）
+indicators:
+  macd: {kind: macd, fast: 12, slow: 26}
+entry: "macd > 0 and macd_prev <= 0"
+exit: "macd < 0"
+stop_loss_pct: 0.08

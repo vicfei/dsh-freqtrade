@@ -1,0 +1,8 @@
+name: sma_cross
+description: 双均线趋势跟随（freqtrade 社区最经典入门策略的思想）
+indicators:
+  fast: {kind: sma, period: 20}
+  slow: {kind: sma, period: 60}
+entry: "fast > slow"
+exit: "fast < slow"
+stop_loss_pct: 0.08

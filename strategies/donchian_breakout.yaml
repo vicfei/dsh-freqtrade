@@ -1,0 +1,8 @@
+name: donchian_breakout
+description: 唐奇安通道突破（海龟思想）
+indicators:
+  upper: {kind: donchian_high, period: 20}
+  lower: {kind: donchian_low, period: 10}
+entry: "close > upper_prev"
+exit: "close < lower_prev"
+stop_loss_pct: 0.10

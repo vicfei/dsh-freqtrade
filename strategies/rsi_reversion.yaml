@@ -1,0 +1,7 @@
+name: rsi_reversion
+description: RSI 超卖回归（均值回归思想）
+indicators:
+  rsi: {kind: rsi, period: 14}
+entry: "rsi < 30"
+exit: "rsi > 55"
+stop_loss_pct: 0.05
